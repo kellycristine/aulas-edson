@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Desafio </h1>
+
+    <script>
+
+        let qtdNotas50 = 0
+        let qtdNotas10 = 0
+        let qtdNotas5 = 0
+        let qtdNotas1 = 0
+
+        let valor = 184
+
+        while(valor >= 50){
+            valor = valor - 50
+            qtdNotas50++
+        }
+
+        while(valor >= 10){
+            valor = valor - 10
+            qtdNotas10++
+        }
+
+        while(valor >= 5){
+            valor = valor - 5
+            qtdNotas5++
+        }
+
+        while(valor >= 1){
+            valor = valor - 1
+            qtdNotas1++
+        }
+
+
+        document.write(`<p> GC$ 50,00 -> ${qtdNotas50} </p>`)
+        document.write(`<p> GC$ 10,00 -> ${qtdNotas10} </p>`)
+        document.write(`<p> GC$ 5,00 -> ${qtdNotas5} </p>`)
+        document.write(`<p> GC$ 1,00 -> ${qtdNotas1} </p>`)
+
+        // uma pra guardar o valor desejado
+        // e as outras 4 para guardar quantidade de notas para cada valor
+
+        // valor desejado = 154182
+
+        // 50
+        // 72 - 50 = 22
+        // 22 - 50 = -
+
+        // 10
+        // 22 - 10 = 12
+        // 12 - 12 = 2
+
+        // 5
+        // 2 - 5 = -
+
+        // 1
+        // 2 - 1 = 1
+        // 1 - 1 = 0
+        
+
+
+    </script>
+</body>
+</html>

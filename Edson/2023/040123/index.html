@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .minhaClasse{
+            margin-left: 20px;
+        }
+
+        .segundaClasse{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        onmouseout: evento disparado quando o mouse sair do elemento
+        onmouseenter: evento disparado quando o mouse entrar no elemento
+        onmousemove: evento disparado quando o mouse se movimenta em cima do elemento
+        onclick: evento disparado quando o elemento receber um clique do mouse
+    -->
+    <div id="container">
+        <img id="minha-lampada"
+        onmouseout="apagarLampada()" 
+        onmouseenter="acenderLampada()" 
+        onclick="quebrarLampada()" 
+        src="imagens/lampada_apagada.jpg" >
+    </div>
+    
+        
+
+    <!-- <button 
+        id="btn-restaurar" 
+        hidden="hidden" 
+        onclick="restaurarLampada()"> Restaurar lampada </button> -->
+
+    <script src="index.js"></script>
+</body>
+</html>

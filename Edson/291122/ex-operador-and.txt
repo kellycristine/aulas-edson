@@ -1,0 +1,35 @@
+
+objetivo = ir ao cinema
+
+condicoes:
+
+- tenho que ter dinheiro
+- tem que ter ingresso disponível
+
+1 cenario:
+
+- eu tenho dinheiro = VERDADEIRO
+- nao tem ingresso disponível = FALSO
+
+resultado = nao posso ir ao cinema = FALSO
+
+2 cenario:
+
+- Eu nao tenho dinheiro = FALSO
+- Tem ingresso disponível = VERDADEIRO
+
+resultado = nao posso ir ao cinema = FALSO
+
+3 cenario:
+
+- Eu nao tenho dinheiro = FALSO
+- Nao tem ingresso disponível = FALSO
+
+resultado = nao posso ir ao cinema = FALSO
+
+4 cenario:
+
+- Eu tenho dinheiro = VERDADEIRO
+- Tem ingresso disponível = VERDADEIRO
+
+resultado = posso ir ao cinema = VERDADEIRO

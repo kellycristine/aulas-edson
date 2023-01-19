@@ -1,0 +1,22 @@
+
+INPUTS:
+Obter o valor da primeira nota
+Obter o valor da segunda nota
+Obter o valor da terceira nota
+
+PROCESSAMENTO (ALGORITMO):
+
+Obter a media de notas através do seguinte calculo:
+primeira nota + segunda nota + terceira / 3
+
+Se media >= 9 E media <= 10
+  Mostra a mensagem Aprovado com nota excelente
+Se nao Se a media >= 7 E media < 9
+  Mostra a mensagem Aprovado com nota boa
+Se nao
+  Obter a nota da recuperacao
+
+  Se a nota da recuperacao >= 6
+    Mostra a mensagem Aprovado na recuperacao
+  Se nao
+    Mostra a mensagem Reprovado, estude e pratique mais

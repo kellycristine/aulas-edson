@@ -1,0 +1,544 @@
+
+INPUTS:
+Obter o valor da primeira nota
+Obter o valor da segunda nota
+Obter o valor da terceira nota
+
+PROCESSAMENTO (ALGORITMO):
+
+Obter a media de notas através do seguinte calculo:
+primeira nota + segunda nota + terceira / 3
+
+Se media >= 9 E media <= 10
+  Mostra a mensagem Aprovado com nota excelente
+Se nao Se a media >= 7 E media < 9
+  Mostra a mensagem Aprovado com nota boa
+Se nao
+  Obter a nota da recuperacao
+
+  Se a nota da recuperacao >= 6
+    Mostra a mensagem Aprovado na recuperacao
+  Se nao
+    Mostra a mensagem Reprovado, estude e pratique mais
+
+
+    --------
+    
+objetivo = ir ao cinema
+
+condicoes:
+
+- tenho que ter dinheiro
+- tem que ter ingresso disponível
+
+1 cenario:
+
+- eu tenho dinheiro = VERDADEIRO
+- nao tem ingresso disponível = FALSO
+
+resultado = nao posso ir ao cinema = FALSO
+
+2 cenario:
+
+- Eu nao tenho dinheiro = FALSO
+- Tem ingresso disponível = VERDADEIRO
+
+resultado = nao posso ir ao cinema = FALSO
+
+3 cenario:
+
+- Eu nao tenho dinheiro = FALSO
+- Nao tem ingresso disponível = FALSO
+
+resultado = nao posso ir ao cinema = FALSO
+
+4 cenario:
+
+- Eu tenho dinheiro = VERDADEIRO
+- Tem ingresso disponível = VERDADEIRO
+
+resultado = posso ir ao cinema = VERDADEIRO
+
+-------------
+
+
+Para passar na frente da fila a pessoa precisa 
+ser gestante, deficiente ou idosa
+
+pessoa = 18 anos e náo tem problemas
+
+
+1 cenario:
+
+- a pessoa é gestante? NAO
+- A pessoa é deficiente? NAO
+- A pessoa é idosa? NAO
+
+resultado = A PESSOA NAO PODE PASSAR NA FRENTE FILA
+
+2 cenario:
+
+pessoa = 18 anos e é gestante
+
+- a pessoa é gestante? SIM
+- A pessoa é deficiente? NAO 
+- A pessoa é idosa? NAO
+
+resultado = A PESSOA PODE PASSAR NA FRENTE DA FILA
+
+3 cenario:
+
+pessoa = 62 anos e é cadeirante
+
+- a pessoa é gestante? NAO
+- A pessoa é deficiente? SIM 
+- A pessoa é idosa? SIM
+
+resultado = A PESSOA PODE PASSAR NA FRENTE DA FILA
+
+------------------------------
+// IF SIMPLES
+
+// let chover = false
+
+// // condicional = se 
+// // condicao = chover 
+// if(chover) {
+//     // acao a ser executada = entao nao vou ao parque
+//     document.write('<h3> Nao vou ao parque </h3>')
+// } else {
+//   document.write('<h3> Vou ao parque </h3>')  
+// }
+
+// document.write('<h2> Texto que vai aparecender independente da condicao </h2>')
+
+// ESTRUTURA CONDICIONAL COMPOSTO
+
+// let idade =62
+
+// if(idade < 12){
+//     document.write('<h2> Voce é uma crianca </h2>')
+// } else if(idade < 18){
+//     document.write('<h2> Voce é adolescente </h2>')
+// } else if(idade < 60){
+//     document.write('<h2> Voce é adulto </h2>')
+// } else {
+//     document.write('<h2> Voce é idoso </h2>')
+// }
+
+// if(idade < 12){
+//     document.write('<h2> Voce é uma crianca </h2>')
+// } else {
+//     if(idade < 18){
+//         document.write('<h2> Voce é adolescente </h2>')
+//     } else {
+//         if(idade < 60){
+//             document.write('<h2> Voce é adulto </h2>')
+//         } else {
+//             document.write('<h2> Voce é idoso </h2>')
+//         }
+//     }
+// }
+
+
+// OPERADOR AND / &&
+
+// let tenhoDinheiro = true
+// let temIngresso = true
+
+// if(tenhoDinheiro && temIngresso){
+//     document.write('<h2> Vou ao cinema </h2>')
+// } else {
+//     document.write('<h2> Nao posso ir ao cinema </h2>')
+// }
+
+// exemplo slide - intervalo[10,25]
+
+// let numero = 20
+
+// // numero precisa ser maior ou igual do que 10
+// // numero precisa ser menor ou igual do que 25
+
+// if(numero >= 10 && numero <= 25){
+//     document.write('<h2> O número está no intervalo entre 10 e 25 </h2>')
+// } else {
+//     document.write('<h2> O número nao está no intervalo </h2>')
+// }
+
+
+// OPERADOR OR / ||
+
+// let eIdoso = false;
+// let eGestante = false;
+
+// if(eIdoso || eGestante){
+//    document.write('<h2> Voce pode passar na frente da fila </h2>') 
+// }
+
+// // exemplo slide - fora do intervalo[10,25]
+
+// let numero = 29
+
+// // numero precisa ser menor do que 10
+// // numero precisa ser manior do que 25
+
+// if(numero < 10 || numero > 25) {
+//     document.write('<h2> Número fora do intervalo </h2>') 
+// } else {
+//     document.write('<h2> Número dentro do intervalo </h2>') 
+// }
+
+
+let media = (5 + 8 + 2 + 9) / 4
+
+document.write(media)
+
+-------------------------------------
+let numero1 = 5
+let numero2 = 10
+let operacao = '3'
+
+let resultado;
+
+// if(operacao == 'somar'){
+//     resultado = numero1 + numero2
+// } else if(operacao == 'subtracao'){
+//     resultado = numero1 - numero2
+// } else if(operacao == 'multiplicacao'){
+//     resultado = numero1 * numero2
+// } else if(operacao == 'divisao'){
+//     resultado = numero1 / numero2
+// } else {
+//     resultado = -9999
+// }
+
+// switch case > escolha caso
+// ==
+switch(operacao){
+    case '1': 
+        resultado = numero1 + numero2
+        console.log('executou o caso de somar')
+        break;
+        
+    case '2': 
+        resultado = numero1 - numero2
+        console.log('executou o caso de sbutracao')
+        break;
+
+    case '3': 
+        resultado = numero1 * numero2
+        console.log('executou o caso de multiplicao')
+    
+    case '4': 
+        resultado = numero1 / numero2
+        console.log('executou o caso de divisao')
+        break
+    
+    default: 
+        resultado = -9999
+        console.log('a opcao nao foi encontrada, entao executou o default')
+    
+}
+
+document.write(`Resultado da operacao é: ${resultado}`)
+
+--------------------------------
+Ir até restaurante
+
+Entra no restaurante
+
+Procura e escolhe uma mesa para sentar
+
+Garcon vem fazer o primeiro atendimento
+
+
+// enquanto = laco de repeticao (palavra reservada)
+// eu estiver com fome = condicao
+Repita isso enquanto eu estiver com fome
+
+    Um garcon vem e pergunta se a gente quer um pedaco de pizza de X sabor?
+
+    se eu gosto sabor, entao
+        eu aceito o pedaco de pizza
+        eu como o pedaco que o garcon deu
+
+    se eu nao gosto do sabor, entao
+        eu recuso o pedaco de pizza
+
+    eu espero outro garcon vim oferecer um pedaco de pizza
+
+Vou até caixa
+
+Pago a conta
+
+Saio do restaurante
+
+E vou cas
+----------------------------------------
+
+
+Ir até restaurante
+
+Entra no restaurante
+
+Procura e escolhe uma mesa para sentar
+
+Garcon vem fazer o primeiro atendimento
+
+Um garcon vem e pergunta se a gente quer um pedaco de pizza de X sabor?
+
+se eu gosto sabor, entao
+    eu aceito o pedaco de pizza
+    eu como o pedaco que o garcon deu
+
+se eu nao gosto do sabor, entao
+    eu recuso o pedaco de pizza
+
+eu espero outro garcon vim oferecer um pedaco de pizza
+
+Um garcon vem e pergunta se a gente quer um pedaco de pizza de X sabor?
+
+se eu gosto sabor, entao
+    eu aceito o pedaco de pizza
+    eu como o pedaco que o garcon deu
+
+se eu nao gosto do sabor, entao
+    eu recuso o pedaco de pizza
+
+eu espero outro garcon vim oferecer um pedaco de pizza
+
+Um garcon vem e pergunta se a gente quer um pedaco de pizza de X sabor?
+
+se eu gosto sabor, entao
+    eu aceito o pedaco de pizza
+    eu como o pedaco que o garcon deu
+
+se eu nao gosto do sabor, entao
+    eu recuso o pedaco de pizza
+
+eu espero outro garcon vim oferecer um pedaco de pizza
+--------------------------------
+// while
+
+// let contador = 0
+
+// while(contador <= 3) {
+//     // document.write(`<h3> Contador: ${contador} </h3>`)
+//     console.log(`<h3> Contador: ${contador} </h3>`)
+//     contador++
+// }
+
+// do {
+//     document.write(`<h3> Contador: ${contador} </h3>`)
+//     contador++
+// } while(contador < 3)
+
+// contador += 3
+// resultdo = numero1 + numero2
+
+
+// FOR
+
+// incremento - 1 ao 10
+// for(let contador = 1; contador <= 10; contador++){
+//     document.write(`<p>Contador: ${contador}<p>`)
+// }
+
+// decremento - 15 ao 1
+// for(let contador = 15; contador >= 1;contador--){
+//     document.write(`<p>Contador: ${contador}<p>`)
+// }
+
+// tabuada do 2
+
+// 2 x 1 = 2
+// 2 x 2 = 4
+// ....
+// 2 x 10 = 20
+
+for (let contador = 1; contador <= 10; contador++){
+    let resultado = 2 * contador
+    document.write(`<p> 2 x ${contador} = ${resultado} <p>`)
+}
+------------------------
+desafio da ilha growdev
+
+        let qtdNotas50 = 0
+        let qtdNotas10 = 0
+        let qtdNotas5 = 0
+        let qtdNotas1 = 0
+
+        let valor = 184
+
+        while(valor >= 50){
+            valor = valor - 50
+            qtdNotas50++
+        }
+
+        while(valor >= 10){
+            valor = valor - 10
+            qtdNotas10++
+        }
+
+        while(valor >= 5){
+            valor = valor - 5
+            qtdNotas5++
+        }
+
+        while(valor >= 1){
+            valor = valor - 1
+            qtdNotas1++
+        }
+
+
+        document.write(`<p> GC$ 50,00 -> ${qtdNotas50} </p>`)
+        document.write(`<p> GC$ 10,00 -> ${qtdNotas10} </p>`)
+        document.write(`<p> GC$ 5,00 -> ${qtdNotas5} </p>`)
+        document.write(`<p> GC$ 1,00 -> ${qtdNotas1} </p>`)
+
+        // uma pra guardar o valor desejado
+        // e as outras 4 para guardar quantidade de notas para cada valor
+
+        // valor desejado = 154182
+
+        // 50
+        // 72 - 50 = 22
+        // 22 - 50 = -
+
+        // 10
+        // 22 - 10 = 12
+        // 12 - 12 = 2
+
+        // 5
+        // 2 - 5 = -
+
+        // 1
+        // 2 - 1 = 1
+        // 1 - 1 = 0
+        
+
+        ------------------------------
+        function mostrarMultiplosDe3(){
+    document.write('<p> Olá </p>')
+
+    for(let contador = 1; contador <= 50; contador++){
+        if(contador % 3 == 0){
+            document.write(`<p> O número ${contador} é multiplo de 3 </p>`)
+        }
+    }
+}
+
+function escreverOla(nomePessoa){
+    document.write(`<p> Olá ${nomePessoa} </p>`)
+}
+
+// escreverOla('Edson Martins')
+
+// escreverOla('Gabriela Lei....')
+
+// escreverOla('Carla')
+
+// escreverOla('Mateus')
+
+// let nomeFornecido = prompt('Digite seu nome pra mim te comprimentar')
+// let idadeUsuario = 20
+
+// escreverOla(nomeFornecido)
+
+// let meuNome = 'Edson Martins'
+// let nomeDigitadoPeloUsuario = prompt('Digite seu nome pra mim te comprimentar')
+
+// document.write(`O nome que o usuário digitou no promp é: ${nomeDigitadoPeloUsuario}`)
+
+
+// escreverOla(prompt('Digite seu nome pra mim te comprimentar'))
+
+// nomePessoa = prompt('Digite seu nome pra mim te comprimentar')
+
+
+// FUNCAO COM PARAMETRO E RETORNO
+
+function somar(n1, n2){ 
+    let resultado = n1 + n2 
+    return resultado; 
+}
+
+let numero1 = Number(prompt('Digita o primeiro número')) 
+let numero2 = Number(prompt('Digita o segundo número')) 
+
+let retornoDaOperacao = somar(numero1, numero2) 
+
+document.write(`<h3>O retorno da funcao somar é: ${retornoDaOperacao}</h3>`)
+
+
+
+
+
+
+// atividade troca de valores entre variaveis
+// let numero1 = 10
+// let numero2 = 30
+// let temporaria = numero1
+// numero1 = numero2
+// numero2 = temporaria
+// console.log(`numero1: ${numero1}`)
+// console.log(`numero2: ${numero2}`)
+// console.log(`temporaria: ${temporaria}`)
+
+------------------------------
+const nome = 'Edson'
+
+if(typeof nome == 'string'){
+    alert('A variavel nome é do tipo string')
+}
+
+console.log(nome)
+console.log(typeof nome)
+
+// nome = 'Lais'
+
+// console.log(nome)
+
+// palavras reservada para declaracao de variaveis
+// let
+// const
+// var
+
+
+// function saudarPessoa(){
+//     let idadePessoa = 20
+//     document.write(`<h3>Bom dia ${nome}</h3>`)
+// }
+
+// saudarPessoa()
+
+// document.write(`Idade da pessoa é: ${idadePessoa}`)
+
+// let media = 4
+
+// se a media for menor que 6 o aluno deve fazer uma recuperacao
+// e se a nota da recuperacao for maior que 5 ele esta aprovado
+// if(media < 6){
+//     let notaRecuperacao = 7
+
+//     if(notaRecuperacao > 5){
+//         console.log(`aluno aprovado na recuperacao com a nota ${notaRecuperacao}`)
+//     } else {
+//         console.log('aluno reprovado')
+//     }
+// }
+
+// console.log(`A nota da recuperacao foi: ${notaRecuperacao}`)
+
+let qualquer = 'lucas'
+console.log(qualquer)
+console.log(typeof qualquer)
+
+qualquer = 20
+console.log(qualquer)
+console.log(typeof qualquer)
+
+qualquer = true
+console.log(qualquer)
+console.log(typeof qualquer)
+-------------------------------------

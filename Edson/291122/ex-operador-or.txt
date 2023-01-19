@@ -1,0 +1,35 @@
+
+
+Para passar na frente da fila a pessoa precisa 
+ser gestante, deficiente ou idosa
+
+pessoa = 18 anos e náo tem problemas
+
+
+1 cenario:
+
+- a pessoa é gestante? NAO
+- A pessoa é deficiente? NAO
+- A pessoa é idosa? NAO
+
+resultado = A PESSOA NAO PODE PASSAR NA FRENTE FILA
+
+2 cenario:
+
+pessoa = 18 anos e é gestante
+
+- a pessoa é gestante? SIM
+- A pessoa é deficiente? NAO 
+- A pessoa é idosa? NAO
+
+resultado = A PESSOA PODE PASSAR NA FRENTE DA FILA
+
+3 cenario:
+
+pessoa = 62 anos e é cadeirante
+
+- a pessoa é gestante? NAO
+- A pessoa é deficiente? SIM 
+- A pessoa é idosa? SIM
+
+resultado = A PESSOA PODE PASSAR NA FRENTE DA FILA

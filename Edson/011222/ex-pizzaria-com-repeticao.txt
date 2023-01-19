@@ -1,0 +1,31 @@
+Ir até restaurante
+
+Entra no restaurante
+
+Procura e escolhe uma mesa para sentar
+
+Garcon vem fazer o primeiro atendimento
+
+
+// enquanto = laco de repeticao (palavra reservada)
+// eu estiver com fome = condicao
+Repita isso enquanto eu estiver com fome
+
+    Um garcon vem e pergunta se a gente quer um pedaco de pizza de X sabor?
+
+    se eu gosto sabor, entao
+        eu aceito o pedaco de pizza
+        eu como o pedaco que o garcon deu
+
+    se eu nao gosto do sabor, entao
+        eu recuso o pedaco de pizza
+
+    eu espero outro garcon vim oferecer um pedaco de pizza
+
+Vou até caixa
+
+Pago a conta
+
+Saio do restaurante
+
+E vou cas

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3> 👩‍💻👨‍💻 Cadastro de dev's 👩‍💻👨‍💻</h3>
+
+    <form id="formulario-cadastro" onsubmit="cadastrarDev(event)">
+        <!-- 
+            Informações pessoais:
+            Nome, e-mail, data de nascimento, telefone, endereco
+            Informações profissionais (de conhecimento)
+            Atuação na área (front-end, back-end, full-stack) - select
+            Senioridade (Junir, pleno, senior) - radio button
+            Tecnologias (Html, css, javascript, typescript, Node, React, C#) - Checkbox 
+            Experiencias - text area
+         -->
+
+        <fieldset>
+            <h4> Dados pessoais: </h4>
+
+            <label for="nome-completo"> Nome Completo: </label>
+            <input type="text" id="nome-completo" name="nomeCompleto" placeholder="Édson Martins" required>
+
+            <br /> <br />
+
+            <label for="email">E-mail </label>
+            <input type="email" name="email" id="email" placeholder="edson@gmail.com" required>
+
+            <br /> <br />
+
+            <label for="data-nascimento">Data nascmento: </label>
+            <input type="date" name="dataNascimento" id="data-nascimento">
+
+            <br /> <br />
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" placeholder="51 92222-3333">
+
+            <br /> <br />
+
+            <label for="endereco">Endereço: </label>
+            <input type="text" name="endereco" id="endereco" placeholder="Rua x, n 399, Campo Bom">
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+            <h4> Dados profissionais: </h4>
+
+            <label for="area-atuacao">Área de atuação:</label>
+            <select name="areaAtuacao" id="area-atuacao">
+                <option selected disabled>Selecione</option>
+                <option value="front-end">Eu sou Fron-End</option>
+                <option value="back-end">Eu sou Back-End</option>
+                <option value="full-stack">Eu sou Full Stack</option>
+            </select>
+
+            <br /><br />
+
+            <label for="">Nivel de Senioridade: </label>
+            <br />
+
+            <input type="radio" value="junior" id="radio-junior" name="nivelSenior" checked />
+            <label for="radio-junior">Sou Junior</label>
+            <br />
+
+            <input type="radio" value="pleno" id="radio-pleno" name="nivelSenior" />
+            <label for="radio-pleno">Sou Pleno</label>
+            <br />
+            
+            <input type="radio" value="senior" id="radio-senior" name="nivelSenior" />
+            <label for="radio-senior">Sou Senior</label>
+
+        </fieldset>
+
+        <br />
+
+        <input type="submit" value="Cadastrar Dev">
+    </form>
+
+    <br />
+    
+    <a href="./detalhe.html">Ir para o detalhe</a>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
